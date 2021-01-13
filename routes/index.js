@@ -105,7 +105,7 @@ router.post('/sendAgreement', (req, res) => {
     "MONTHS": req.body.MONTHS,
     "STARTING DATE": req.body.STARTING_DATE,
     "RENT AMOUNT": req.body.RENT_AMOUNT,
-    "ROOSTEASY [X]": req.body.ROOSTEASY,
+    // "ROOSTEASY [X]": req.body.ROOSTEASY,
     "INITIAL": req.body.INITIAL,
     "DATE": req.body.DATE
   };
@@ -137,7 +137,7 @@ async function run(req, res) {
   const monthField = form.getTextField('MONTHS');
   const startingField = form.getTextField('STARTING DATE');
   const rentField = form.getTextField('RENT AMOUNT');
-  const roosteasyField = form.getTextField('ROOSTEASY [X]');
+  // const roosteasyField = form.getTextField('ROOSTEASY [X]');
   const initialField = form.getTextField('INITIAL');
   const dateField = form.getTextField('DATE');
 
@@ -145,7 +145,7 @@ async function run(req, res) {
   monthField.setText(req.body.MONTHS.toString());
   startingField.setText(req.body.STARTING_DATE);
   rentField.setText(req.body.RENT_AMOUNT);
-  roosteasyField.setText(req.body.ROOSTEASY);
+  // roosteasyField.setText(req.body.ROOSTEASY);
   initialField.setText(req.body.INITIAL);
   dateField.setText(req.body.DATE);
 
