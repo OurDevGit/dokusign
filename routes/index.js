@@ -45,7 +45,7 @@ router.post('/sendAgreement', (req, res) => {
   var storageRef = admin.storage().bucket();
   let date_ob = Date.now(); 
 
-  pdfFiller.fillFormWithFlatten('../public/upload/Agreement.pdf', '../public/upload/' + date_ob + '.pdf', data, true, (err) => {
+  pdfFiller.fillFormWithFlatten('./upload/Agreement.pdf', './upload/' + date_ob + '.pdf', data, true, (err) => {
     if (err) throw err;
     storageRef.upload('./public/upload/' + date_ob + '.pdf')
       .then(data => {
