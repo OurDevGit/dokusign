@@ -1,3 +1,6 @@
+/* eslint-disable promise/always-return */
+const functions = require('firebase-functions');
+
 var createError = require('http-errors');
 var express = require('express');
 var path = require('path');
@@ -8,8 +11,8 @@ const fileUpload = require('express-fileupload');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const morgan = require('morgan');
-
-var indexRouter = require('./routes/index');
+const pdf2base64 = require('pdf-to-base64');
+var indexRouter = require('./views/index');
 
 var app = express();
 
@@ -17,7 +20,11 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public1')));
+
+app.set('views', __dirname + '/views');
+app.set('view engine', 'ejs');
+app.engine('pdf', require('ejs').renderFile);
 
 // enable files upload
 app.use(fileUpload({
@@ -48,4 +55,4 @@ app.use(function(err, req, res, next) {
   res.render('error');
 });
 
-module.exports = app;
+exports.app = functions.https.onRequest(app);
