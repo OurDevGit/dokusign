@@ -1,0 +1,100 @@
+[
+    {
+        "name": "INITIAL",
+        "fullName": "INITIAL",
+        "isNoExport": false,
+        "isFileSelect": false,
+        "type": "plaintext",
+        "value": null
+    },
+    {
+        "name": "OWNER SIGNATURE",
+        "fullName": "OWNER SIGNATURE",
+        "isNoExport": false,
+        "type": "signature"
+    },
+    {
+        "name": "RENTER SIGNATURE",
+        "fullName": "RENTER SIGNATURE",
+        "isNoExport": false,
+        "type": "signature"
+    },
+    {
+        "name": "MADE_DATE",
+        "fullName": "MADE_DATE",
+        "isNoExport": false,
+        "isFileSelect": false,
+        "type": "plaintext",
+        "value": null
+    },
+    {
+        "name": "APARTMENT",
+        "fullName": "APARTMENT",
+        "isNoExport": false,
+        "isFileSelect": false,
+        "type": "plaintext",
+        "value": null
+    },
+    {
+        "name": "FLOOR",
+        "fullName": "FLOOR",
+        "isNoExport": false,
+        "isFileSelect": false,
+        "type": "plaintext",
+        "value": null
+    },
+    {
+        "name": "YEARS",
+        "fullName": "YEARS",
+        "isNoExport": false,
+        "isFileSelect": false,
+        "type": "plaintext",
+        "value": null
+    },
+    {
+        "name": "MONTHS",
+        "fullName": "MONTHS",
+        "isNoExport": false,
+        "isFileSelect": false,
+        "type": "plaintext",
+        "value": null
+    },
+    {
+        "name": "DAYS",
+        "fullName": "DAYS",
+        "isNoExport": false,
+        "isFileSelect": false,
+        "type": "plaintext",
+        "value": null
+    },
+    {
+        "name": "BEGIN_DATE",
+        "fullName": "BEGIN_DATE",
+        "isNoExport": false,
+        "isFileSelect": false,
+        "type": "plaintext",
+        "value": null
+    },
+    {
+        "name": "MONTHLY_RENT",
+        "fullName": "MONTHLY_RENT",
+        "isNoExport": false,
+        "isFileSelect": false,
+        "type": "plaintext",
+        "value": null
+    },
+    {
+        "name": "TOTAL_RENT",
+        "fullName": "TOTAL_RENT",
+        "isNoExport": false,
+        "isFileSelect": false,
+        "type": "plaintext",
+        "value": null
+    },
+    {
+        "name": "SubmitButton5",
+        "fullName": "SubmitButton5",
+        "isNoExport": false,
+        "type": "button"
+    }
+]
